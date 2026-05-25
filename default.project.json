@@ -1,0 +1,47 @@
+{
+  "name": "Simulator",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Managers": {
+        "$path": "src/server/Managers"
+      }
+    },
+
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "Assets": {
+        "$className": "Folder"
+      },
+      "Modules": {
+        "$path": "src/server/Modules"
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Managers": {
+          "$path": "src/client/Managers"
+        }
+      },
+        "Modules": {
+        "$path": "src/server/Modules"
+      }
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Modules": {
+        "$path": "src/shared/Modules"
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    }
+
+  }
+}
