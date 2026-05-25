@@ -1,7 +1,14 @@
+--[[
+	PizzaLvr49 @ Pixel Play Studios
+	5/25/26
+	CoinPile.luau
+	Manages Coin Piles
+--]]
+
 local TweenService = game:GetService("TweenService")
 local ServerStorage = game:GetService("ServerStorage")
 local RunService = game:GetService("RunService")
-local PlayerData = require(ServerStorage.Modules.PlayerData)
+-- local PlayerData = require(ServerStorage.Modules.PlayerData)
 
 local CoinPile = {}
 local activePiles = {}
@@ -13,7 +20,7 @@ local PileValues = {
 	Large = 250
 }
 
-local coinsPerClick = 50
+-- local coinsPerClick = 50
 local spawnInterval = 1
 local maxPilesPerZone = 18
 local paddingMultiplier = 1.25
@@ -171,9 +178,9 @@ end
 local function handlePileClick(pile, player, scaleValue, pileSize, position, parent)
 	if pile.IsFinished then return end
 
-	local playerData = PlayerData.GetPlayerDataAsync(player)
-	playerData:IncrementCoins(coinsPerClick)
-	pile.CoinsLeft -= coinsPerClick
+	-- local playerData = PlayerData.GetPlayerDataAsync(player)
+	-- playerData:IncrementCoins(coinsPerClick)
+	-- pile.CoinsLeft -= coinsPerClick
 
 	updatePileUI(pile)
 
