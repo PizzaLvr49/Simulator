@@ -5,8 +5,8 @@
 
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "Managers": {
-        "$path": "src/server/Managers"
+      "Main": {
+        "$path": "src/server/main.server.luau"
       }
     },
 
@@ -24,12 +24,9 @@
       "$className": "StarterPlayer",
       "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts",
-        "Managers": {
-          "$path": "src/client/Managers"
-        }
-      },
-        "Modules": {
-        "$path": "src/server/Modules"
+      "Main": {
+        "$path": "src/client/main.client.luau"
+      }
       }
     },
 
@@ -42,6 +39,5 @@
         "$path": "Packages"
       }
     }
-
   }
 }

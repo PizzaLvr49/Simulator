@@ -8,6 +8,31 @@ version = "1.2.2"
 dependencies = []
 
 [[package]]
+name = "centau/vide"
+version = "0.3.1"
+dependencies = []
+
+[[package]]
+name = "centau/vide"
+version = "0.4.0"
+dependencies = []
+
+[[package]]
+name = "littensy/charm"
+version = "0.10.0"
+dependencies = []
+
+[[package]]
+name = "littensy/charm-sync"
+version = "0.3.0"
+dependencies = [["charm", "littensy/charm@0.10.0"]]
+
+[[package]]
+name = "littensy/vide-charm"
+version = "0.3.0"
+dependencies = [["Vide", "centau/vide@0.3.1"], ["charm", "littensy/charm@0.10.0"]]
+
+[[package]]
 name = "pizza/simulator"
 version = "0.1.0"
-dependencies = [["DocumentService", "anthony0br/documentservice@1.2.2"]]
+dependencies = [["Charm", "littensy/charm@0.10.0"], ["CharmSync", "littensy/charm-sync@0.3.0"], ["DocumentService", "anthony0br/documentservice@1.2.2"], ["Vide", "centau/vide@0.4.0"], ["VideCharm", "littensy/vide-charm@0.3.0"]]

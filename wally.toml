@@ -6,3 +6,7 @@ realm = "shared"
 
 [dependencies]
 DocumentService = "anthony0br/documentservice@1.2.2"
+CharmSync = "littensy/charm-sync@0.3.0"
+Charm = "littensy/charm@0.10.0"
+Vide = "centau/vide@0.4.0"
+VideCharm = "littensy/vide-charm@0.3.0"
